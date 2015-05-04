@@ -1,7 +1,7 @@
 # Assignment-10
 
 ####a.	Do you find the code to be simpler when using AngularJS? If so, how? If not, why?
-Yes it is simpler, since I just needed to create one or more controllers that house the logic of the static html page that can have many views. These views are connected to the controllers with view module ($scope). 
+Yes it is simpler, since I just needed to create one controller (SimpleController) that house the logic of the main view of the index.html page. This view is connected to the controllers by view module ($scope). $scope.comments is used to intitialize comments. 
 
 ####b.	Would a beginner to front-end development find the code to be simpler? Why or why not?
 Yes, they would because it is not required to deal with another structure of framework or install software. All what they need is download angular.min.js from https://angularjs.org/ and follow some tutorial about how to create modules and controllers and connecting it with the view. Also, there are bunch of directives and filters that available in https://docs.angularjs.org/api
