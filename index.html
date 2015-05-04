@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>A Simple App</title>
+
+  <link href='style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <!--use the new module-->
+  <body ng-app="angularApp">
+    <header>
+      <h1>Comments</h1>
+      <p>A simple app that allows a user to input comments</p>
+    </header>
+      <!--turn Html fragment (e.g. a <div>) into a view -->
+          <div ng-controller="SimpleController" id='container'>
+            <main>
+              <section class='comment-input'>
+                <p>Add Your Comment:</p>
+                <input ng-model="newComment" /> {{ newComment }}
+                <button ng-click="addCommentFromInputBox()">+</button>
+              </section>
+              <section class='comments'>
+                <p ng-repeat="com in comments">{{ com }}</p>
+              </section>
+           </main>
+          </div>
+
+    <footer>
+      <p>this work is released into the public domain</p>
+    </footer>
+     <!-- angular.js -->
+    <script type="text/javascript" src="javascripts/angular.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
+    <script src="javascripts/app.js"></script>
+   
+  </body>
+</html>
